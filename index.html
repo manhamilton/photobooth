@@ -1,0 +1,33 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Photobooth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <div class="preview">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas"></canvas>
+
+      <div id="countdown"></div>
+
+      <!-- Frame PNG transparan -->
+      <img src="frames/frame.png" class="frame" alt="Frame Photobooth">
+    </div>
+
+    <button id="start">Start Camera</button>
+    <button id="shoot">Take 4 Photos</button>
+
+    <div class="bgPicker">
+      <img src="backgrounds/bg1.jpg" alt="BG1">
+      <img src="backgrounds/bg2.jpg" alt="BG2">
+      <img src="backgrounds/bg3.jpg" alt="BG3">
+    </div>
+
+  </div>
+
+  <script
