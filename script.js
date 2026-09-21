@@ -1,21 +1,19 @@
 const video = document.getElementById("video");
-const frame = document.getElementById("frame");
+const startBtn = document.getElementById("start");
 
-document.getElementById("start").onclick = async () => {
+startBtn.addEventListener("click", async () => {
   try {
     const stream = await navigator.mediaDevices.getUserMedia({
-      video: { facingMode: "user" }
+      video: {
+        facingMode: "user"
+      },
+      audio: false
     });
 
     video.srcObject = stream;
+    await video.play();
   } catch (err) {
     alert("Kamera tidak bisa dibuka.");
+    console.error(err);
   }
-};
-
-document.getElementById("frameUpload").onchange = (e) => {
-  const file = e.target.files[0];
-  if (!file) return;
-
-  frame.src = URL.createObjectURL(file);
-};
+});
