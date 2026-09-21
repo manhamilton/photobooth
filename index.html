@@ -4,34 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Photobooth</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="app">
+<div class="app">
 
-    <div class="preview">
-      <video id="video" autoplay playsinline muted></video>
-      <canvas id="canvas"></canvas>
+  <h1>AI Photobooth</h1>
 
-      <div id="countdown"></div>
+  <div class="preview">
 
-      <img src="frames/frame.png" id="frame" class="frame" alt="Frame Photobooth">
-    </div>
+    <video id="video" autoplay playsinline muted></video>
 
-    <button id="start">Start Camera</button>
-    <button id="shoot">Take 4 Photos</button>
+    <canvas id="canvas"></canvas>
 
-    <div class="bgPicker">
-      <img src="backgrounds/bg1.jpg" alt="BG1">
-      <img src="backgrounds/bg2.jpg" alt="BG2">
-      <img src="backgrounds/bg3.jpg" alt="BG3">
-    </div>
+    <img src="frames/frame.png" id="frame" class="frame" alt="Frame">
+
+    <div id="countdown"></div>
 
   </div>
 
-  <script src="script.js"></script>
+  <button id="start">📷 Buka Kamera</button>
+
+  <label class="uploadBtn">
+    🖼 Upload dari Galeri
+    <input type="file" id="galleryUpload" accept="image/*" hidden>
+  </label>
+
+  <button id="shoot">📸 Take Photo</button>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>

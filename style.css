@@ -1,69 +1,84 @@
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-  background:#111;
-  color:white;
-  font-family:Arial, sans-serif;
-  display:flex;
-  justify-content:center;
-  min-height:100vh;
+background:#111;
+color:white;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+min-height:100vh;
 }
 
 .app{
-  width:100%;
-  max-width:390px;
-  padding:20px;
+width:100%;
+max-width:360px;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:15px;
 }
 
 .preview{
-  position: relative;
-  width: 100%;
-  max-width: 320px;
-  aspect-ratio: 1028 / 3264;
-  background: black;
-  border-radius: 20px;
-  overflow: hidden;
-  margin: auto;
+position:relative;
+width:100%;
+aspect-ratio:1028/3264;
+background:black;
+border-radius:22px;
+overflow:hidden;
 }
 
 video,
 canvas{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+canvas{
+display:none;
 }
 
 .frame{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  z-index: 10;
-  pointer-events: none;
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:contain;
+pointer-events:none;
+z-index:10;
+}
+
+#countdown{
+position:absolute;
+z-index:20;
+width:100%;
+text-align:center;
+top:45%;
+font-size:70px;
+font-weight:bold;
+text-shadow:0 0 20px black;
 }
 
 button,
-.upload{
-  width:100%;
-  margin-top:15px;
-  padding:15px;
-  border:none;
-  border-radius:12px;
-  background:#fff;
-  color:#000;
-  font-size:16px;
-  font-weight:bold;
-  text-align:center;
-  cursor:pointer;
-}
-
-.upload input{
-  display:none;
+.uploadBtn{
+display:block;
+width:100%;
+margin-top:15px;
+padding:15px;
+border:none;
+border-radius:12px;
+background:white;
+color:black;
+font-size:16px;
+font-weight:bold;
+text-align:center;
+cursor:pointer;
 }
