@@ -20,27 +20,33 @@ body{
 }
 
 .preview{
-  position:relative;
-  width:100%;
-  aspect-ratio:3/4;
-  background:#000;
-  border-radius:20px;
-  overflow:hidden;
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1028 / 3264;
+  background: black;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto;
 }
 
 video,
-canvas,
-.frame{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
+canvas{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .frame{
-  z-index:10;
-  pointer-events:none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 10;
+  pointer-events: none;
 }
 
 button,
