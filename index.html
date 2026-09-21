@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Photobooth</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,13 +12,12 @@
   <div class="app">
 
     <div class="preview">
-      <video id="video" autoplay playsinline></video>
+      <video id="video" autoplay playsinline muted></video>
       <canvas id="canvas"></canvas>
 
       <div id="countdown"></div>
 
-      <!-- Frame PNG transparan -->
-      <img src="frames/frame.png" class="frame" alt="Frame Photobooth">
+      <img src="frames/frame.png" id="frame" class="frame" alt="Frame Photobooth">
     </div>
 
     <button id="start">Start Camera</button>
@@ -30,4 +31,7 @@
 
   </div>
 
-  <script
+  <script src="script.js"></script>
+
+</body>
+</html>
